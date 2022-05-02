@@ -1,8 +1,11 @@
 # User Guide #
 
 Purpose:
-Test me
 Test Me Line 2
 Line 3
 
 System Requirements:
+  HDD: 100GB
+  OS: Windows 10+
+
+To open the doc
