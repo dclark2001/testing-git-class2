@@ -1,0 +1,6 @@
+1) Download File
+2) Extract download
+3) Double-click on setup exe
+4) Accept the license
+5) Click on Next -> Finish
+6) Congrats!
