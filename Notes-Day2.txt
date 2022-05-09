@@ -1,0 +1,184 @@
+1) Download git from https://git-scm.com
+
+2) Install the latest version v2.36.0
+
+3) To know if Git is installed, open command prompt and execute below command & hit enter:
+
+git --version
+
+The above command will reveal, if git is installed or not
+
+4) Ensure you also install git-bash during step#2 installation
+
+5) Create a directory [local repo] --> git to track it via git init --> let users make changes during collaboration activities in agile project --> git status --> add changes to the git tracking area/staging area --> commit changes to the git staging/tracking area --> push changes to remote server [github/gitlab/bit-bucket/physical server/aws/azure]
+
+6) Create a local repo/folder on your PC
+
+7) Open Git-bash in this path
+
+8) Initialize git by using the command
+
+git init
+
+9) Start with your project work and continue with collaboration activities
+
+10) To know if Git has started tracking your work, execute the below command
+
+git status
+
+11) To configure the user name & user email with git tool, execute the below commands:
+
+git config --global user.name "Kiran"
+
+git config --global user.email "kiran@innovations.com"
+
+12) To validate if your user name & email address are added to git, execute the below commands:
+
+git config --global user.name
+
+git config --global user.email
+
+git config --global --list
+
+13) To add the untracked file by git, execute the below command:
+
+git add fileName
+
+git add fileName1, fileName2, fileName3 
+
+git add -A
+
+git add *.*
+
+git add .
+
+git add *.txt
+
+14) To unstage your changes [reverse the add command], execute the below command:
+
+git rm --cached fileName
+
+15) To commit your changes to git staging area, execute the below command:
+
+git commit -m "commit message"
+
+16) To know the log/history of all commits, execute the below command:
+
+git log
+
+git log --stat
+
+17) To know the syntax or to get help for the git commands, execute the below command:
+
+git help commandName
+
+git commandName --help
+
+18) To know the changes made to the modified file, execute the below command:
+
+git diff
+
+19) To reject the recent/modified changes [after executing git diff command], execute the below command:
+
+git restore fileName
+
+20) To ignore certain files, create a .gitignore file and write the names of the files to be ignored
+
+touch .gitignore
+
+21) To modify the commit message for the top/latest commit, execute the below command:
+
+git commit --amend -m "updated commit msg"
+
+22) To modify the older commit messages, execute the below command:
+
+git rebase -i HEAD~N // N is the number of commits to perform a rebase on
+
+The command will display the latest X commits in your default text editor :
+Move to the lines of the commit message you want to change and replace pick with reword:
+
+23) To remove the recent commit entry in git log, execute the below command
+
+0b2066e9b8f50ea92f2f756c1175b8cbcb15fc0e
+
+24) To push git local repo data to remote server [github], follow below steps:
+
+
+(i) Visit https://www.github.com and sign up for your account
+(ii) Sign in to github.com
+(iii) Create a new repository/repo of type Public/Private
+(iv) Push your local git repo data to remote server using below command:
+
+git push -u githubURL master
+
+git push -u https://github.com/kirangopisetty/Innovations.git master
+
+24) To download remote repo data, click on CODE button --> Download ZIP
+
+25) To clone remote repo data, execute the below command:
+
+git clone githubURL
+
+git clone https://github.com/kirangopisetty/Innovations.git
+
+26) To pull latest remote repo data, execute the below command:
+
+git pull githubURL master
+or
+git pull
+
+27) To create a branch/trunk, the command is
+
+git branch branchName
+
+KIRAN TASK
+
+--> prepare a step by step guide for software installation
+
+--> create your own branch --> work on above task --> get it reviewed by your team lead --> once its approved, merge your branch code with master code --> push your local changes to remote server
+
+28) To list all the branches, the command is
+
+git branch //show local branches
+
+git branch -r //show remote branches
+
+git branch -a //show local branches & remote branches
+
+29) To switch from 1 branch to another branch, the command is
+
+git checkout branchName
+or
+git switch branchName
+
+30) To merge branch code with master, switch to master branch and execute the below command:
+
+git merge branchName
+
+31) To push the branches from local git to remote server, the command is
+
+git push -u githubURL branchName
+
+32) To delete a branch from local git, the command is
+
+git branch -d branchName
+or
+git branch --delete branchName
+
+33) To delete the branch from remote repo, the command is
+
+git push githubURL -d branchName
+or
+git push githubURL --delete branchName
+
+34) To know the differences between 2 branches, the command is
+
+git diff branchName
+or
+git diff master
+
+35) To cherry pick a commit from a branch to master, use the command
+
+switch to master and execute the below command
+
+git cherry-pick commitHash
